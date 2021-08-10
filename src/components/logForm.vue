@@ -1,10 +1,10 @@
 <template>
   <div class="login-container">
-    <el-form class="login-form" ref="form" :model="user" label-width="80px">
-      <el-form-item label="手机号">
+    <el-form class="login-form" ref="form" :model="user">
+      <el-form-item >
         <el-input v-model="user.mobile"></el-input>
       </el-form-item>
-      <el-form-item label="验证码">
+      <el-form-item >
         <el-input v-model="user.code"></el-input>
       </el-form-item>
       <el-form-item>
@@ -49,10 +49,11 @@ export default {
     justify-content: center;
     align-items: center;
     background: url('./img/surreal_art_2-wallpaper-1920x1080.jpg');
-    // background-size: cover;
+    background-size: cover;
     .login-form{
       background: #fff;
-      padding: 50px 80px;
+      padding: 50px;
+      min-width: 300px;
       border-radius: 8px;
     }
   }
